@@ -33,7 +33,7 @@ Você foi contratado para modelar o banco de dados de um mercado. O sistema deve
 
 3. Diagrama ER:
    
-   ```mermaid
+```mermaid
    erDiagram
     CLIENT {
         int id PK
@@ -76,5 +76,5 @@ Você foi contratado para modelar o banco de dados de um mercado. O sistema deve
     PEDIDO ||--o{ PEDIDO_PRODUTO : contém
     PRODUTO ||--o{ PEDIDO_PRODUTO : está_em
     PEDIDO ||--o{ PAGAMENTO : tem
-    PAGAMENTO }o--|| METODO_PAGAMENTO : usa
-    ```
+    PAGAMENTO }o--|| METODO_PAGAMENTO : usa    
+```
