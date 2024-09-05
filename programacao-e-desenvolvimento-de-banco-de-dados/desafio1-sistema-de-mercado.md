@@ -73,8 +73,8 @@ Você foi contratado para modelar o banco de dados de um mercado. O sistema deve
     }
     
     CLIENT ||--o{ PEDIDO : realiza
-    PEDIDO ||--o{ PEDIDO_PRODUTO : contém
-    PRODUTO ||--o{ PEDIDO_PRODUTO : está_em
+    PEDIDO ||--o{ PEDIDO_PRODUTO : contem
+    PRODUTO ||--o{ PEDIDO_PRODUTO : esta_em
     PEDIDO ||--o{ PAGAMENTO : tem
     PAGAMENTO }o--|| METODO_PAGAMENTO : usa    
 ```
