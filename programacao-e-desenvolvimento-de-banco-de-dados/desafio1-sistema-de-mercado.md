@@ -78,3 +78,6 @@ Você foi contratado para modelar o banco de dados de um mercado. O sistema deve
     PEDIDO ||--o{ PAGAMENTO : tem
     PAGAMENTO }o--|| METODO_PAGAMENTO : usa    
 ```
+4. Banco Relacional:
+   
+   Criei também o script para criar fisicamente as tabelas do banco de dados nesse [link](create-tables.sql)

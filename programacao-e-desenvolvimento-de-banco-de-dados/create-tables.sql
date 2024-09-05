@@ -1,0 +1,42 @@
+CREATE TABLE CLIENTE (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    telefone VARCHAR(20)
+);
+
+CREATE TABLE PRODUTO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE PEDIDO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    data DATE NOT NULL,
+    cliente_id INT,
+    FOREIGN KEY (cliente_id) REFERENCES CLIENT(id)
+);
+
+CREATE TABLE METODO_PAGAMENTO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    descricao VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE PAGAMENTO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    valor DECIMAL(10, 2) NOT NULL,
+    metodo_pagamento_id INT,
+    pedido_id INT,
+    FOREIGN KEY (metodo_pagamento_id) REFERENCES METODO_PAGAMENTO(id),
+    FOREIGN KEY (pedido_id) REFERENCES PEDIDO(id)
+);
+
+CREATE TABLE PEDIDO_PRODUTO (
+    pedido_id INT,
+    produto_id INT,
+    quantidade INT NOT NULL,
+    PRIMARY KEY (pedido_id, produto_id),
+    FOREIGN KEY (pedido_id) REFERENCES PEDIDO(id),
+    FOREIGN KEY (produto_id) REFERENCES PRODUTO(id)
+);
