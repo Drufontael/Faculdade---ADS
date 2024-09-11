@@ -11,6 +11,14 @@ CREATE TABLE PRODUTO (
     preco DECIMAL(10, 2) NOT NULL
 );
 
+CREATE TABLE MOVIMENTACAO_ESTOQUE (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tipo_movimentacao ENUM('Entrada', 'Saida') NOT NULL,
+    quantidade INT NOT NULL,
+    produto_id INT,
+    FOREIGN KEY (produto_id) REFERENCES PRODUTO(id)
+);
+
 CREATE TABLE PEDIDO (
     id INT AUTO_INCREMENT PRIMARY KEY,
     data DATE NOT NULL,

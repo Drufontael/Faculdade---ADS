@@ -21,6 +21,7 @@ Você foi contratado para modelar o banco de dados de um mercado. O sistema deve
    - Produto
    - Pedido
    - Pagamento
+   - Movimentacao_Estoque
    - Metodo_Pagamento
    - Pedido_Pagamento
 
@@ -28,6 +29,7 @@ Você foi contratado para modelar o banco de dados de um mercado. O sistema deve
    - Cliente | 1 ----- realiza ----- 0.* | Pedido
    - Pedido | 1 ----- contém ----- 0.* | Pedido_Produto
    - Produto | 1 ----- está em ----- 0.* | Pedido_Produto
+   - Produto | 1 ----- tem ----- 0.* | Movimentacao_Estoque
    - Pedido | 1 ----- tem ----- 0.* | Pagamento
    - Pagamento | 0.* ----- usa ----- | Metodo_Pagamento
 
@@ -45,8 +47,17 @@ Você foi contratado para modelar o banco de dados de um mercado. O sistema deve
     PRODUTO {
         int id PK
         string nome
-        decimal preco
+        decimal preco        
     }
+
+    MOVIMENTACAO_ESTOQUE {
+        int id PK
+        enum tipo_movimentacao
+        int quantidade
+        int produto_id FK
+    }
+    
+    %% Enum valores possíveis para tipo_movimentacao: "ENTRADA", "SAIDA"
     
     PEDIDO {
         int id PK
@@ -74,7 +85,8 @@ Você foi contratado para modelar o banco de dados de um mercado. O sistema deve
     
     CLIENT ||--o{ PEDIDO : realiza
     PEDIDO ||--o{ PEDIDO_PRODUTO : contem
-    PRODUTO ||--o{ PEDIDO_PRODUTO : esta_em
+    PRODUTO ||--o{ MOVIMENTACAO_ESTOQUE : tem
+    PRODUTO ||--o{ PEDIDO_PRODUTO : esta_em    
     PEDIDO ||--o{ PAGAMENTO : tem
     PAGAMENTO }o--|| METODO_PAGAMENTO : usa    
 ```
