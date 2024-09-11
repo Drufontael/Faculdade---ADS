@@ -1,5 +1,6 @@
-## Desafio 1
-### Sistema de Mercado
+# Desafio 1
+
+## Sistema de Mercado
 
 ### **Proposta:**
 Você foi contratado para modelar o banco de dados de um mercado. O sistema deve armazenar informações sobre clientes, produtos, pedidos e pagamentos.
@@ -37,7 +38,7 @@ Você foi contratado para modelar o banco de dados de um mercado. O sistema deve
    
 ```mermaid
    erDiagram
-    CLIENT {
+    CLIENTE {
         int id PK
         string nome
         string email
@@ -83,7 +84,7 @@ Você foi contratado para modelar o banco de dados de um mercado. O sistema deve
         int quantidade
     }
     
-    CLIENT ||--o{ PEDIDO : realiza
+    CLIENTE ||--o{ PEDIDO : realiza
     PEDIDO ||--o{ PEDIDO_PRODUTO : contem
     PRODUTO ||--o{ MOVIMENTACAO_ESTOQUE : tem
     PRODUTO ||--o{ PEDIDO_PRODUTO : esta_em    
