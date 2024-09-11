@@ -93,4 +93,4 @@ Você foi contratado para modelar o banco de dados de um mercado. O sistema deve
 ```
 4. Banco Relacional:
    
-   Criei também o script para criar fisicamente as tabelas do banco de dados nesse [link](create-tables.sql)
+   Criei também o script para criar fisicamente as tabelas do banco de dados nesse [link](create-tables-desafio1.sql)

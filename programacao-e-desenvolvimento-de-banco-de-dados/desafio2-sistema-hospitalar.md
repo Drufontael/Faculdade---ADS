@@ -48,7 +48,7 @@ Você foi designado para modelar o banco de dados de um hospital. O sistema deve
     PACIENTE{
         int id PK
         string nome
-        string cpf
+        string cpf 
         date data_nacimento
         enum sexo
         string cep FK
@@ -79,7 +79,7 @@ Você foi designado para modelar o banco de dados de um hospital. O sistema deve
         int id PK
         string nome
         string descricao
-        int id_especialidade
+        int id_especialidade FK
     }
 
     CONSULTA_TRATAMENTO{
@@ -97,7 +97,7 @@ Você foi designado para modelar o banco de dados de um hospital. O sistema deve
 
     INTERNACAO_TRATAMENTO{
         int id_internacao FK
-        int if_tratament FK
+        int id_tratamento FK
     }
 
     ESPECIALIDADE{
@@ -125,4 +125,9 @@ Você foi designado para modelar o banco de dados de um hospital. O sistema deve
     PACIENTE ||--o{ INTERNACAO: possui
     INTERNACAO ||--o{ INTERNACAO_TRATAMENTO: possui
     TRATAMENTO ||--o{ INTERNACAO_TRATAMENTO: prescrito_em
+    TRATAMENTO }o--|| ESPECIALIDADE: possuem
 ```
+
+5. Banco Relacional:
+
+    Criei também o script para criar fisicamente as tabelas do banco de dados nesse [link](create-tables-desafio2.sql)
