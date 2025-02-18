@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Eduardo Estigarribia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bg-dark text-white py-3">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Eduardo Estigarribia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#sobre-mim">Sobre Mim</a></li>
+            <li class="nav-item"><a class="nav-link" href="#trabalhos-recentes">Trabalhos Recentes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="sobre-mim" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Sobre Mim</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              Estudante de Análise e Desenvolvimento de Sistemas com <strong>6+ certificações em Java e Spring Boot</strong>, experiência em testes automatizados (JUnit/Mockito) e domínio de metodologias ágeis. Habilidades em desenvolvimento de APIs REST, integração com bancos SQL/NoSQL e versionamento com Git.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3>Habilidades Técnicas</h3>
+            <ul>
+              <li><strong>Linguagens:</strong> Java, Python, JavaScript</li>
+              <li><strong>Frameworks:</strong> Spring Boot, JPA, REST APIs</li>
+              <li><strong>Testes:</strong> JUnit, Mockito, Maven</li>
+              <li><strong>Banco de Dados:</strong> MySQL, PostgreSQL, NoSQL</li>
+              <li><strong>Ferramentas:</strong> Git, GitHub, Linux, Docker</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Vídeo centralizado -->
+        <div class="d-flex justify-content-center mt-4">
+          <div class="embed-responsive embed-responsive-16by9 w-100 w-lg-70">
+            <iframe class="embed-responsive-item" src="assets/videos/apresentacao.mp4" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="trabalhos-recentes" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Trabalhos Recentes</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Projeto 1 -->
+            <div class="carousel-item active">
+              <img src="assets/images/projeto1.jpeg" class="d-block w-100 carousel-image" alt="Projeto 1">
+              <div class="carousel-caption">
+                <h5>
+                  <a href="https://github.com/Drufontael/our-recipes" target="_blank" class="text-white text-decoration-none">
+                    Our-Recipes
+                  </a>
+                </h5>
+                <p>Aplicativo full-stack para criação e compartilhamento de receitas culinárias.</p>
+              </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="carousel-item">
+              <img src="assets/images/projeto2.jpeg" class="d-block w-100 carousel-image" alt="Projeto 2">
+              <div class="carousel-caption">
+                <h5>
+                  <a href="https://github.com/Drufontael/auth-user" target="_blank" class="text-white text-decoration-none">
+                    Auth-User
+                  </a>
+                </h5>
+                <p>API de autenticação segura utilizando JWT para validação de tokens.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Controles do Carrossel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contato</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-white py-3">
+    <div class="container">
+      <p>&copy; 2025 Eduardo Estigarribia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <!-- Conteúdo da página será adicionado aqui -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+[
+    
+      {
+        "name": "Armadillo",
+        "title": "O Dev Impenetrável",
+        "image": "assets/images/armadillo.jpeg",
+        "mantra": "Se não está seguro, não está pronto.",
+        "description": "Sempre preparado para se defender contra bugs e invasões, esse dev constrói código seguro e robusto. Leva a segurança a sério, com camadas de proteção em cada linha de código."
+      },
+      {
+        "name": "Octopus",
+        "title": "O Dev Polvo Multitarefas",
+        "image": "assets/images/octopus.jpeg",
+        "mantra": "Dá pra implementar, é só mais um tentáculo!",
+        "description": "Consegue lidar com várias tecnologias ao mesmo tempo, desde frontend até o back. Cada braço mexe numa IDE diferente, e eles têm um pouco de tudo: Python, JS, SQL... Multitarefas é o segundo nome deles!"
+      },
+      {
+        "name": "Unicorn",
+        "title": "O Dev Frontend Glamour",
+        "image": "assets/images/unicorn.jpeg",
+        "mantra": "Se não é bonito, precisa refatorar.",
+        "description": "Apaixonado pelo visual, este desenvolvedor cria interfaces e animações tão brilhantes quanto a crina de seu mascote. Adora CSS customizado, cores ousadas, e não tem medo de experimentar designs fora da curva."
+      },
+      {
+        "name": "Beaver",
+        "title": "O Dev Construtor",
+        "image": "assets/images/beaver.jpeg",
+        "mantra": "Devagar e sempre: entrega garantida.",
+        "description": "Prático e focado, é o dev que ergue estruturas sólidas, desbravando frameworks, e aproveitando o que é estável e testado. Gosta de trabalho meticuloso, preferindo construir blocos sólidos ao invés de explorar modinhas tecnológicas."
+      },
+      {
+        "name": "Magpie",
+        "title": "O Dev Explorador de Bibliotecas",
+        "image": "assets/images/magpie.jpeg",
+        "mantra": "Essa lib é a cara desse projeto!",
+        "description": "Adora adicionar bibliotecas e pacotes aos projetos. Tem mil repositórios no GitHub e sempre procura novas tecnologias para dar uma 'turbinada' no código. Seu conhecimento é tão vasto quanto sua coleção de pacotes."
+      },
+      {
+        "name": "Wolf",
+        "title": "O Dev Solitário",
+        "image": "assets/images/wolf.jpeg",
+        "mantra": "Código é melhor que palavras.",
+        "description": "Prefere trabalhar sozinho e em silêncio, longe das distrações de reuniões. O código é sua companhia, e ele detesta pair programming. Seus commits falam por ele, e sempre são impecáveis."
+      },
+      {
+        "name": "Lion",
+        "title": "O Dev Alpha",
+        "image": "assets/images/lion.jpeg",
+        "mantra": "Código é para ser visto e admirado.",
+        "description": "Líder nato, ama participar de projetos de código aberto e ter seu nome em contribuições importantes. Possui um senso de orgulho no que faz e adora brilhar nas apresentações."
+      },
+      {
+        "name": "Squirrel",
+        "title": "O Dev Meticuloso",
+        "image": "assets/images/squirrel.jpeg",
+        "mantra": "Limpeza e ordem em cada commit.",
+        "description": "Esse desenvolvedor organiza o código com a mesma paixão que um esquilo organiza nozes. Cada método é bem comentado, e a estrutura é meticulosamente pensada. Um verdadeiro perfeccionista."
+      },
+      {
+        "name": "Chameleon",
+        "title": "O Dev Adaptável",
+        "image": "assets/images/chameleon.jpeg",
+        "mantra": "Adaptar-se é o segredo para vencer.",
+        "description": "Adaptável e versátil, consegue lidar com qualquer mudança de projeto, tecnologia ou linguagem. Hoje está em Java, amanhã em Ruby, e sempre dá um jeito de entregar o que precisa."
+      },
+      {
+        "name": "Phoenix",
+        "title": "O Dev que Renova o Código",
+        "image": "assets/images/phoenix.jpeg",
+        "mantra": "Nada é irreversível, nem mesmo o código legado.",
+        "description": "Adora pegar projetos problemáticos e 'renascer' com um novo código. Seus refactors são lendários, conseguindo fazer até o sistema mais caótico voltar a funcionar. Especialista em renascer do caos dos bugs."
+      },
+      {
+        "name": "Rhino",
+        "title": "O Dev Incansável",
+        "image": "assets/images/rhino.jpeg",
+        "mantra": "Com ou sem stack trace, eu vou resolver isso!",
+        "description": "Forte e decidido, esse dev enfrenta qualquer problema de código como um rinoceronte em uma missão. Detesta abandonar um problema até resolvê-lo. Focado e perseverante."
+      },
+      {
+        "name": "Koala",
+        "title": "O Dev Zen",
+        "image": "assets/images/koala.jpeg",
+        "mantra": "Calma e código limpo resolvem tudo.",
+        "description": "Tranquilo e com um estilo de vida 'slow coding', acredita em priorizar a paz de espírito no código. Prefere evitar bugs, e usa abordagens que simplifiquem e harmonizem a experiência."
+      }
+    
+     ]
+  

@@ -1,0 +1,86 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+div {
+    border: black 2px solid;
+    margin: 2px;
+}
+
+.container {
+    display: flex;
+    min-height: 50vh;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 2vmin;
+    font-size: 1.2rem;
+}
+
+header {
+    align-self: center;
+}
+
+header h1{
+    text-align: center;
+}
+
+#conteudo-receita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section{
+    padding: 8px;
+}
+
+
+
+#ingredientes ul{
+    margin: 10px;
+    /* border: red 1.5px solid; */
+    list-style: none;
+}
+
+#passos{
+    max-width: 800px;
+}
+
+#passos ol {
+    /* border: red 1.5px solid; */
+    margin-left: 24px;
+}
+
+
+
+@media (min-width:800px){
+    #conteudo-receita{
+        flex-direction: row;
+        align-items:start;
+        justify-content: space-around;       
+    }
+
+    #ingredientes{
+        min-width: 50%;
+    }
+
+    #passos{
+        min-width: 50%;
+    }
+}
+
+
+
+
+
+
+
+

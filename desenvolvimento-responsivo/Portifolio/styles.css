@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #343a40;
+}
+
+/* Estilo para as imagens do carrossel */
+.carousel-image {
+    height: 400px;
+    /* Altura fixa para garantir o formato quadrado */
+    width: 100%;
+    object-fit: cover;
+    /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+/* Estilo para o texto do carrossel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo semi-transparente para melhorar a legibilidade */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h5 a {
+    color: white;
+    /* Cor do link */
+    text-decoration: none;
+    /* Remove sublinhado */
+}
+
+.carousel-caption h5 a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Define a largura do vídeo como 70% em telas grandes */
+/* Define a largura do vídeo como 70% em telas grandes e centraliza */
+.w-lg-70 {
+    width: 100%; /* Padrão para telas pequenas */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+  
+  @media (min-width: 992px) {
+    .w-lg-70 {
+      width: 70%; /* Aplica 70% da largura em telas grandes */
+    }
+  }
+  
+  /* Mantém a proporção 16:9 do vídeo */
+  .embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .embed-responsive::before {
+    display: block;
+    content: "";
+    padding-top: 56.25%; /* Proporção 16:9 */
+  }
+  
+  .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+section {
+    padding: 60px 0;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

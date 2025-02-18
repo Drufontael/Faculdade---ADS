@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+</head>
+<body>
+    <div id='mensagem'></div>
+    <script>
+        let idade = parseInt(prompt('Digite sua idade: '));
+        var resposta;
+        if(idade<18){
+            document.getElementById('mensagem').innerHTML='Você é menor de idade.';
+            document.body.style.background='red';
+        } else{
+            document.getElementById('mensagem').innerHTML='Você é maior de idade.';
+        }
+    </script>
+    
+</body>
+</html>

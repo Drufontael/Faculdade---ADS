@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Responsivo: Fluxo e Frameworks</title>
+    <meta name="description" content="Responsivo">
+    <link rel="stylesheet" href="assets/style/exemplo.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container-header">
+            <h1>Desenvolvimento Responsivo</h1>
+            <nav class="menu">
+                <a href="#fluxo">Fluxo de Trabalho</a>
+                <a href="#mobile-first">Mobile-First</a>
+                <a href="#frameworks">Frameworks CSS</a>
+                <a href="#consideracoes">Considerações</a>
+            </nav>
+            <div class="menu-icon" aria-label="Abrir menu">
+                <svg viewBox="0 0 24 24">
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section id="introducao" class="secao">
+            <div class="introducao-conteudo">
+                <h2>Desenvolvimento Responsivo: Da Teoria à Prática</h2>
+                <p>Pensando em desenvolvimento responsivo, é importante estabelecer um fluxo...</p>
+            </div>
+            <div class="introducao-imagem">
+                <img src="assets/img/Wavy_Bus-20_Single-07.jpg" 
+                    alt="Ilustração de design responsivo mostrando dispositivos diferentes"
+                    loading="lazy">
+            </div>
+        </section>
+
+        <section id="fluxo" class="secao">
+            <h2>Fluxo de Trabalho</h2>
+            <article>
+                <h3>Etapas Principais</h3>
+                <ul>
+                    <li>Inventário e classificação de conteúdo</li>
+                    <li>Criação de wireframes</li>
+                    <li>Prototipação iterativa</li>
+                    <li>Testes multi-dispositivos</li>
+                    <li>Refazer até acertar</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="mobile-first" class="secao">
+            <h2>Estratégia Mobile-First</h2>
+            <div class="vantagens">
+                <h3>Vantagens:</h3>
+                <ul>
+                    <li>Otimização de performance</li>
+                    <li>Hierarquia visual clara</li>
+                    <li>Melhor SEO</li>
+                    <li>Facilidade de manutenção</li>
+                    <li>Adaptação natural ao touchscreen</li>
+                    <li>Alinhamento as tendencias do mercado</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="frameworks" class="secao">
+            <h2>Frameworks CSS Comparativos</h2>
+            <div class="table-responsive">
+                <table class="tabela-comparativa">
+                    <thead>
+                        <tr>
+                            <th scope="col">Framework</th>
+                            <th scope="col">Características</th>
+                            <th scope="col">Vantagens</th>
+                            <th scope="col">Desvantagens</th>
+                            <th scope="col">Casos de Uso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Framework">Bootstrap</td>
+                            <td data-label="Características">Sistema de grid, componentes pré-built</td>
+                            <td data-label="Vantagens">Documentação extensa, comunidade ativa</td>
+                            <td data-label="Desvantagens">Peso do arquivo, personalização limitada</td>
+                            <td data-label="Casos de Uso">Protótipos rápidos, aplicações empresariais</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Framework">Tailwind CSS</td>
+                            <td data-label="Características">Utility-first, altamente customizável</td>
+                            <td data-label="Vantagens">Leveza, flexibilidade</td>
+                            <td data-label="Desvantagens">Curva de aprendizado, verbosidade</td>
+                            <td data-label="Casos de Uso">Projetos customizados, equipes experientes</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Framework">Foundation</td>
+                            <td data-label="Características">Foco em semântica, acessibilidade</td>
+                            <td data-label="Vantagens">Personalização avançada</td>
+                            <td data-label="Desvantagens">Complexidade para pequenos projetos</td>
+                            <td data-label="Casos de Uso">Aplicações complexas, acessibilidade crítica</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Framework">Bulma</td>
+                            <td data-label="Características">Baseado em Flexbox, sem JavaScript</td>
+                            <td data-label="Vantagens">Sintaxe simples, modular</td>
+                            <td data-label="Desvantagens">Componentes limitados</td>
+                            <td data-label="Casos de Uso">Projetos leves, interfaces minimalistas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="consideracoes" class="secao">
+            <h2>Considerações Finais</h2>
+            <blockquote>
+                "A escolha de ferramentas deve equilibrar complexidade e performance"
+                <!-- Futuro ícone de aspas -->
+                <!-- <i class="fas fa-quote-right"></i> -->
+            </blockquote>
+            <p>Em projetos simples, muitas vezes um editor de texto e navegador são suficientes...</p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>© 2024 Desenvolvimento Responsivo - Todos os direitos reservados</p>
+        <!-- Futuros ícones sociais -->
+        <!-- <div class="redes-sociais">...</div> -->
+    </footer>
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', () => {
+          document.querySelector('.menu').classList.toggle('active');
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Alterado para português já que o conteúdo está nesse idioma -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Corrigido o valor da viewport -->
+    <title>Título da Receita</title> <!-- Título da página relevante -->
+    <link rel="stylesheet" href="styles-ds.css">
+</head>
+<body>
+    <main class="container"> <!-- Usando a tag semântica main para conteúdo principal -->
+        <header> <!-- Agrupando o cabeçalho da receita -->
+            <h1>Titulo da Receita</h1>
+            <section aria-label="Descrição da receita"> <!-- Section com descrição -->
+                <p>Descrição detalhada da receita aqui. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </section>
+        </header>
+
+        <article id="conteudo-receita"> <!-- Artigo principal com conteúdo da receita -->
+            <section id="ingredientes"> <!-- Seção de ingredientes -->
+                <h2>Ingredientes</h2> <!-- Título hierárquico adequado -->
+                <ul>
+                    <li>Ingrediente 1</li>
+                    <li>Ingrediente 2</li>
+                    <li>Ingrediente 3</li>
+                    <li>Ingrediente 4</li>
+                    <li>Ingrediente 5</li>
+                    <li>Ingrediente 6</li>
+                </ul>
+            </section>
+
+            <section id="passos"> <!-- Seção de modo de preparo -->
+                <h2>Modo de Preparo</h2> <!-- Título hierárquico adequado -->
+                <ol>
+                    <li>Passo detalhado de preparo 1</li>
+                    <li>Passo detalhado de preparo 2</li>
+                    <li>Passo detalhado de preparo 3</li>
+                </ol>
+            </section>
+        </article>
+
+        <section id="comentarios" aria-label="Comentários sobre a receita"> <!-- Seção de comentários -->
+            <h2>Comentários</h2> <!-- Título da seção -->
+            <article class="comentario"> <!-- Cada comentário como artigo independente -->
+                <p>Comentário de usuário 1</p>
+            </article>
+            <article class="comentario">
+                <p>Comentário de usuário 2</p>
+            </article>
+            <article class="comentario">
+                <p>Comentário de usuário 3</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
